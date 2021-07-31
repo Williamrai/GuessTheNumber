@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Guess My Number</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <h1>GUESS MY NUMBER</h1>
+            <div class="game-container">
+                <!-- Game Header -->
+               <div class="header">
+                    <div class="score">
+                        <h4>Score: <span id="score-el"></span></h4>
+                        <h4>High Score: <span id="high-score-el"></span></h4>
+                    </div>
+                    <h2>Guess the number between 1 and 100</h2>
+                    <div class="play-again">
+                        <button class="btn">Play</button>
+                    </div>
+               </div>
+               
+               <!-- Main Game -->
+               <div class="main-game-wrapper">
+                    <div class="main-game-window">
+                        
+                        <div class="guess-image-wrapper">
+                            <div class="guess-image">
+                                <img src="img/guess.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="check-part">
+                            <input type="number" id="user-input" placeholder="Guess a number">
+                            <button class="btn2" id="check-btn">Check</button>
+                            <p id="feed-el">Guess Start</p>
+                        </div>
+                    </div>
+               </div>
+               
+               <!-- Game Guess History -->
+               <div class="guess-history-wrapper">
+                    <div class="guess-history">
+                        <h3>Guess History</h3>
+                        <ul id="guess-list">
+                            <li>10</li>
+                        </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+        <script src="script.js"> </script>
+    </body>
+</html>
